@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <form id="contactForm" class="form" novalidate>
+      <h2>Contact Us</h2>
+
+      <div class="input-group">
+        <input type="text" id="name" name="name" required>
+        <label for="name">Name</label>
+        <small id="nameError" class="error-message"></small>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" name="email" required>
+        <label for="email">Email</label>
+        <small id="emailError" class="error-message"></small>
+      </div>
+
+      <div class="input-group">
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="message">Message</label>
+        <small id="messageError" class="error-message"></small>
+      </div>
+
+      <button type="submit">Send Message</button>
+      <p id="successMessage" class="success-message"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* Google Font */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+background: 
+  linear-gradient(135deg, rgba(102,126,234,0.8), rgba(118,75,162,0.8)),
+  url('https://source.unsplash.com/1600x900/?technology,abstract');
+background-size: cover;
+background-position: center;
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.form h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+}
+
+.input-group label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #ccc;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 5px;
+  font-size: 0.8rem;
+  color: #a0e9ff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #00c6ff;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.error-message {
+  color: #ff5e57;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  display: block;
+}
+
+.success-message {
+  text-align: center;
+  margin-top: 20px;
+  color: #7fff7f;
+  font-weight: bold;
+}
